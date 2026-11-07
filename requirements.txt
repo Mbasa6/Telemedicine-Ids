@@ -1,0 +1,20 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+pydantic
+email-validator
+python-jose[cryptography]
+passlib[bcrypt]
+bcrypt<4.1  # passlib 1.7.4's bcrypt handler is incompatible with bcrypt>=4.1's stricter 72-byte enforcement
+python-multipart
+scikit-learn
+pandas
+numpy
+joblib
+streamlit
+plotly
+requests
+pytest
+pytest-asyncio
+httpx
+fpdf2

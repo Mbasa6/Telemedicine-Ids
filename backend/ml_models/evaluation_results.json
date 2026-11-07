@@ -1,0 +1,56 @@
+{
+  "generated_at": "2026-11-07T18:57:50.593632+00:00",
+  "dataset_path": "C:\\Users\\u0122437\\Desktop\\telemedicine-ids\\backend\\data\\synthetic_telemedicine_events.csv",
+  "dataset_rows": 3000,
+  "feature_names": [
+    "login_attempts",
+    "failed_login_attempts",
+    "failed_ratio",
+    "request_frequency",
+    "session_duration",
+    "data_transfer_volume",
+    "access_web_portal",
+    "access_mobile_app",
+    "access_api",
+    "access_admin_console",
+    "device_windows_pc",
+    "device_mac",
+    "device_linux",
+    "device_android",
+    "device_ios",
+    "device_unknown",
+    "hour_of_day",
+    "is_off_hours"
+  ],
+  "random_forest": {
+    "accuracy": 0.9967,
+    "precision": 1.0,
+    "recall": 0.9885,
+    "f1_score": 0.9942,
+    "false_positive_rate": 0.0,
+    "confusion_matrix": [
+      [
+        638,
+        0
+      ],
+      [
+        3,
+        259
+      ]
+    ],
+    "confusion_matrix_labels": [
+      "normal(0)",
+      "attack(1)"
+    ],
+    "avg_prediction_latency_ms": 0.052,
+    "train_size": 2100,
+    "test_size": 900
+  },
+  "isolation_forest": {
+    "trained_on_normal_only_rows": 1490,
+    "mean_anomaly_score_normal_test": 0.409,
+    "mean_anomaly_score_attack_test": 0.7816,
+    "flagged_rate_test": 0.4844,
+    "note": "Isolation Forest is unsupervised; metrics above describe score separation between known classes for evaluation purposes only. It identifies deviations from learned normal behaviour, not a guarantee of detecting every unknown attack type."
+  }
+}

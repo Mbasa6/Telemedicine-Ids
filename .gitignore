@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.db
+backend/ml_models/*.joblib
+.streamlit/secrets.toml
+*.egg-info/
+.pytest_cache/
+backend/tests/test_telemedicine_ids.db
